@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="web-dev-task-1-css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <a href="sam_index.html"><img src="imges/logo.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about-us">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#contact-us">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>CodeCraft</h1>
+            <p>Making Website in now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>   JavaScript and you are good to go.</p>
+            <a href=""class="hero-btn">Visit US To Know More</a>
+        </div>
+
+    </section>
+
+    <!-- -----about------ -->
+
+    <section class="about-us" id="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest coding </h1>
+                <p>Welcome to our web development space! We are passionate about building innovative and user-friendly web solutions. Our goal is to create modern, responsive websites using the latest technologies like HTML, CSS, JavaScript, and frameworks such as Angular and Bootstrap. Whether you're a beginner or an experienced developer, we offer insights, tutorials, and services to help you enhance your coding skills. Join us on this journey to explore the world of web development!</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="imges/about.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!-- -----service------ -->
+
+    <section class="service" id="service">
+        <h1>Services We Offer</h1>
+        <p>Hi there welcome to over Website, Have a grate day.</p>
+    
+        <div class="row">
+            <div class="service-col">
+                <h3>Web Development</h3>
+                <p>We specialize in building responsive, modern websites using the latest web technologies like HTML, CSS, JavaScript, and frameworks such as Angular and Bootstrap. </p>
+            </div>
+            <div class="service-col">
+                <h3>Front-End Development</h3>
+                <p>Our expertise in front-end development ensures an interactive and user-friendly experience using clean UI/UX design principles. </p>
+            </div>
+            <div class="service-col">
+                <h3>Back-End Development</h3>
+                <p>We work with PHP, MySQL, and other backend technologies to develop secure and efficient web applications. </p>
+            </div>
+        </div>
+    
+    
+    </section>
+
+    <!-- -----contact----- -->
+
+    <section class="contact-us" id="contact-us">
+
+        <h1>Contact Us</h1>
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Bhopal, M.P., India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@eduford.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="form_hendler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="text" name="email" placeholder="Enter email address" required>
+                    <textarea rows="4" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- -----Footer----- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We deliver high-quality web solutions with a focus on design, performance, and innovation. Stay connected for updates on our latest projects!.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+    </section>
+
+    <!-- -------JavaScript for Toggle Menu------- -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
